@@ -1,0 +1,11 @@
+# your writing and style samples stay local
+my_writing.txt
+*.epub
+draft*.md
+final*.md
+*_draft.md
+*_final.md
+
+__pycache__/
+*.pyc
+.DS_Store

@@ -100,6 +100,26 @@ When a style file is used, the `no_copy` gate (soft) flags any rewrite that
 contains 6-word phrases from the sample that weren't in your draft, so the
 sample author's actual sentences can't end up in your text.
 
+## Combining multiple EPUBs
+
+For broader vocabulary and more varied register, combine samples from multiple
+books into one style file:
+
+```
+python3 multi_style.py book1.epub book2.epub book3.epub -o combined_style.txt
+```
+
+The 6000-character budget is divided evenly across all books. Useful when you
+want exposure to different modes: technical writing, narrative, explanatory
+prose. Each book contributes ~2000 chars if you pass three.
+
+Options:
+- `--separator`: add an extra blank line between books in the output
+- `--chars`: change the total budget (default 5800)
+- All other flags match `epub_to_style.py` and apply to each book
+
+Open the result and delete any passages that don't match the voice you want.
+
 ## Knobs
 
 | flag | default | meaning |

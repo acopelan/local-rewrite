@@ -58,7 +58,9 @@ untouched.
 - **Agent-friendly.** Built to be called by a coding agent as the last step of
   a writing workflow. See [`examples/AGENTS.md`](examples/AGENTS.md).
 - **Style from a book.** `epub_to_style.py` builds a style sample from a
-  DRM-free EPUB you own. The sample stays local and is gitignored.
+  DRM-free EPUB you own. `multi_style.py` combines samples from multiple
+  EPUBs into one richer style file for broader vocabulary and register.
+  Samples stay local and are gitignored.
 
 ## Docs
 
